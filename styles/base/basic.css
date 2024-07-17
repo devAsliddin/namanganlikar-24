@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  /* Gray Shades */
+  --color-light-gray: #e0e0e0;
+  --color-medium-gray: #888888;
+  --color-dark-gray: #434343;
+  --color-darker-gray: #333333;
+  --color-lightest-gray: #fbfbfb;
+  --color-almost-white: #f1f1f1;
+  --color-light-silver: #babfc2;
+  --color-medium-silver: #bcc3cd;
+  --color-silver: #cccccc;
+  --color-lightest-silver: #d6deea;
+  --color-very-light-gray: #ebebeb;
+  --color-soft-gold: #efba542e;
+
+  /* Gradient Colors */
+  --color-gradient-orange: linear-gradient(
+    90deg,
+    #fe5c28 0%,
+    rgba(255, 139, 54, 0.9) 88.43%
+  );
+  --color-gradient-blue: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+
+  /* Solid Colors */
+  --color-white: #ffffff;
+  --color-dark-blue: #295093;
+  --color-darker-blue: #285193;
+  --color-darkest-blue: #133c82;
+  --color-lighter-dark-blue: #28508e;
+  --color-dark-blue-opaque: #2851938a;
+  --color-light-dark-blue-opaque: #29509130;
+  --color-lighter-dark-blue-opaque: #29509129;
+  --color-navy-blue: #0039a6;
+  --color-light-blue: #f6f6f9;
+  --color-darkest-black: #000000;
+  --color-dark-black: #202020;
+  --color-dark-green: #05b135;
+  --color-bright-green: #15ce3d;
+  --color-dark-red: #dc1e1e;
+  --color-bright-red: #db0000;
+  --color-light-pink: #f4ccd1;
+  --color-pink: #eb5569;
+  --color-light-navy: #515151;
+  --color-gray-blue: #6b6d97;
+  --color-blue-gray: #7688a4;
+  --color-medium-gray-blue: #4451663d;
+  --color-dark-gray-blue: #515151;
+  --color-medium-red: #d52b1e;
+  --color-medium-gray: #7a7a7a;
+  --color-light-gray-blue: #e4e4e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1 rem = 10px 
+  remga qilganimni sababi reseponsivlik osondroq bo'lishi uchun*/
+}
+
+button {
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  /* bodyga font family berganimni sababi dry dan qochish  */
+}
