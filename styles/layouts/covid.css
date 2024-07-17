@@ -1,0 +1,53 @@
+.covid {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background: var(--color-light-blue);
+  padding: 3.5rem;
+}
+
+.covid > .box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.box_content > p {
+  color: var(--color-darkest-black);
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.covid > .box::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 4.9rem;
+  background: var(--color-light-pink);
+  right: 0;
+}
+
+.covid > .box:nth-child(1):after {
+  background: var(--color-pink);
+  top: -20%;
+  height: 7.2rem;
+}
+
+.covid > .box:nth-child(2) > .box_content > p {
+  color: var(--color-darkest-black);
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.covid > .box:nth-child(2) > .box_content > p > span {
+  color: var(--color-bright-red);
+  font-weight: 400;
+}
+
+.covid > .box:nth-child(4):after {
+  height: 0rem;
+}
