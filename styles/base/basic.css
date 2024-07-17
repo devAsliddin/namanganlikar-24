@@ -4,6 +4,7 @@
   --color-light-gray: #e0e0e0;
   --color-medium-gray: #888888;
   --color-dark-gray: #434343;
+  --color-dark-gray-2: #535353;
   --color-darker-gray: #333333;
   --color-lightest-gray: #fbfbfb;
   --color-almost-white: #f1f1f1;
@@ -13,15 +14,6 @@
   --color-lightest-silver: #d6deea;
   --color-very-light-gray: #ebebeb;
   --color-soft-gold: #efba542e;
-
-  /* Gradient Colors */
-  --color-gradient-orange: linear-gradient(
-    90deg,
-    #fe5c28 0%,
-    rgba(255, 139, 54, 0.9) 88.43%
-  );
-  --color-gradient-blue: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
-
   /* Solid Colors */
   --color-white: #ffffff;
   --color-dark-blue: #295093;
@@ -65,10 +57,12 @@ html {
 
 button {
   border: none;
+  outline: none;
 }
 
 input {
   border: none;
+  outline: none;
 }
 
 li {
@@ -88,4 +82,10 @@ a {
 body {
   font-family: "Rubik", sans-serif;
   /* bodyga font family berganimni sababi dry dan qochish  */
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background: var(--color-darker-blue);
 }
