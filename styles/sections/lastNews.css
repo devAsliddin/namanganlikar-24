@@ -3,7 +3,8 @@
   gap: 3.1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  place-items: center;
+  place-items: top;
+  justify-items: center;
 }
 
 .lastnews-title {
@@ -123,7 +124,6 @@
 }
 
 .lastnews-btn {
-  margin-top: -5rem;
   width: 21.1rem;
   background: var(--color-dark-blue);
   color: var(--color-white);

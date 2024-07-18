@@ -1,5 +1,5 @@
 .ads {
-    margin: 3.8rem 0rem;
+  margin: 3.8rem 0rem;
   width: 100%;
   background: var(--color-light-blue);
   display: flex;
@@ -27,7 +27,7 @@
   line-height: 2.1rem;
 }
 
-.ads > div:nth-child(3){
-    flex-direction: row;
-    gap: 3rem;
+.ads > div:nth-child(3) {
+  flex-direction: row;
+  gap: 3rem;
 }
