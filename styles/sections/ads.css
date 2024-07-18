@@ -1,0 +1,33 @@
+.ads {
+    margin: 3.8rem 0rem;
+  width: 100%;
+  background: var(--color-light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+.ads > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.ads > div > h4 {
+  color: var(--color-dark-blue);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.ads > div > p {
+  color: var(--color-dark-grey);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+}
+
+.ads > div:nth-child(3){
+    flex-direction: row;
+    gap: 3rem;
+}
