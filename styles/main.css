@@ -5,3 +5,5 @@
 @import "./layouts/footer.css";
 @import "./layouts/nrg.css";
 @import "./layouts/covid.css";
+
+@import "./sections/news.css";
