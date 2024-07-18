@@ -1,0 +1,44 @@
+.modal-content {
+  position: relative;
+  width: 80rem;
+  height: 23.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4.6rem 6.3rem 3.2rem 7.8rem;
+}
+.modal-content > h2 {
+  color: var(--color-dark-blue);
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.modal-content > a > button {
+  margin-top: 3rem;
+  padding: 1.7rem 2rem 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(30, 150, 200) 15.068%,
+    rgb(55, 174, 226) 85.959%
+  );
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+
+.modal-content > button > img {
+  width: 3rem;
+}
