@@ -7,3 +7,5 @@
 @import "./layouts/covid.css";
 
 @import "./sections/news.css";
+@import "./sections/notification.css";
+@import "./sections/lastNews.css";

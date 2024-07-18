@@ -1,0 +1,32 @@
+.notification {
+  margin-top: 3.4rem;
+  background: var(--color-soft-gold);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.8rem 2rem 2.8rem 3.4rem;
+}
+.notification > div {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.notification > div {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+}
+.notification button {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.3rem;
+  padding: 0.8rem 0.8rem 0.8rem 1.5rem;
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    #fe5c28 0%,
+    rgba(255, 139, 54, 0.9) 88.43%
+  );
+}
