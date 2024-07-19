@@ -118,3 +118,19 @@ textarea {
   border-radius: 5px;
   gap: 0.6rem;
 }
+
+@media screen and (max-width: 80rem) {
+  .contact {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .contact-inputs {
+    width: 100%;
+  }
+  .contact-cards {
+    font-size: 1.4rem;
+  }
+  .contact-cards .icons .apps {
+    flex-direction: column;
+  }
+}

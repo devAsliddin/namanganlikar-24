@@ -1129,7 +1129,7 @@ document.addEventListener("DOMContentLoaded", function () {
     articleLink.addEventListener("click", function () {
       renderContent(`
  <div class="container">
-      <div class="lastnews">
+      <div class="lastnews article-page">
         <div class="article">
           <div class="article-title">
             <h1>Шавкат Мирзиёев строго предупредил хокимов всех уровней</h1>
@@ -1273,7 +1273,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       </div>
     </div>
-articale page
       `);
     });
   }
@@ -1345,7 +1344,7 @@ articale page
                   Подписатся
                 </button>
               </a>
-              <div>
+              <div class="apps">
                 <img
                   src="./imgs/contact/googlePlay.svg"
                   alt="googlePlay"
@@ -1369,15 +1368,20 @@ articale page
 
   // Toggle navigation menu
   const menuIcon = document.getElementById("menuIcon");
-  if (menuIcon) {
-    menuIcon.onclick = function () {
-      var navList = document.getElementById("navList");
-      navList.style.display =
-        navList.style.display === "flex" ? "none" : "flex";
-    };
-  }
 
-  // Modal functionality
+  menuIcon.addEventListener("click", function () {
+    const navList = document.getElementById("navList");
+    navList.classList.toggle("active");
+
+    if (navList.classList.contains("active")) {
+      this.innerHTML = `
+        <img src="./imgs/x-icon.svg" alt="x-icon" loading="lazy">
+      `; // Change to "X" icon
+    } else {
+      this.innerHTML = "&#9776;"; // Change back to burger icon
+    }
+  });
+
   const modal = document.getElementById("myModal");
   const span = document.getElementsByClassName("closeBtn")[0];
 
@@ -1420,9 +1424,7 @@ articale page
     });
   }
 
-  // Call default page rendering function
   renderDefaultPage();
 });
 
-// Call default page rendering function outside of DOMContentLoaded
 renderDefaultPage();

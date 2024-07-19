@@ -30,3 +30,10 @@
     rgba(255, 139, 54, 0.9) 88.43%
   );
 }
+
+@media screen and (max-width: 88.4rem) {
+  .notification {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

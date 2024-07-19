@@ -51,3 +51,14 @@
 .covid > .box:nth-child(4):after {
   height: 0rem;
 }
+@media screen and (max-width: 80rem) {
+  .covid {
+    flex-direction: column;
+  }
+  .covid > .box {
+    align-items: center;
+  }
+  .covid > .box:after {
+    display: none;
+  }
+}

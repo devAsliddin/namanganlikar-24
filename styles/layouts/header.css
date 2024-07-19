@@ -70,3 +70,26 @@ header {
   width: 2rem;
   height: 2rem;
 }
+.inputs > div:nth-child(1) {
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  border: solid 1px var(--color-dark-gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 88.4rem) {
+  .header-top > .price {
+    display: none;
+  }
+  .inputs > div,
+  .inputs > a {
+    display: none;
+  }
+  header {
+    padding: 0rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,25 +1,53 @@
+/* Modal container styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal content styling */
 .modal-content {
   position: relative;
-  width: 80rem;
-  height: 23.1rem;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 4.6rem 6.3rem 3.2rem 7.8rem;
+  border: 1px solid #888;
+  width: 80rem; /* Could be more or less, depending on screen size */
+  background: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4.6rem 6.3rem 3.2rem 7.8rem;
+  border-radius: 5px;
+  z-index: 1000;
 }
+
+/* Modal header styling */
 .modal-content > h2 {
   color: var(--color-dark-blue);
   font-weight: 500;
   font-size: 2.6rem;
   line-height: 3rem;
 }
+
+/* Close button styling */
 .closeBtn {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-dark-blue);
+  cursor: pointer;
 }
 
+/* Button within modal styling */
 .modal-content > a > button {
   margin-top: 3rem;
   padding: 1.7rem 2rem 1.2rem 1.5rem;
@@ -41,4 +69,15 @@
 
 .modal-content > button > img {
   width: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media screen and (max-width: 88.4rem) {
+    .modal-content{
+        width: 100%;
+    }
 }

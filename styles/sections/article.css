@@ -1,9 +1,12 @@
+.article-page {
+  width: 100%;
+}
+
 .article {
   display: flex;
   flex-direction: column;
   gap: 1.7rem;
 }
-
 .article-title > h1 {
   margin-top: 4rem;
   margin-bottom: 1.3rem;
@@ -12,6 +15,7 @@
   font-weight: 500;
   line-height: 2.8rem;
 }
+
 .article-title > span {
   display: flex;
   align-items: center;
@@ -23,9 +27,17 @@
 }
 
 .article-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.article-img {
+  width: 79.4rem;
+}
+.article-img img{
+  width: 100%;
 }
 
 .article-content > h2,
@@ -44,9 +56,37 @@
   display: flex;
   gap: 2rem;
 }
+
 .article-content > div > span {
   color: var(--color-lighter-dark-blue);
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6rem;
+}
+
+@media screen and (max-width: 80rem) {
+  .article-page {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .article-title > h1 {
+    font-size: 2rem;
+  }
+
+  .article-title > span {
+    font-size: 1.2rem;
+  }
+
+  .article-content > h2,
+  .article-content > p {
+    font-size: 1.6rem;
+  }
+
+  .article-content > div > span {
+    font-size: 1.6rem;
+  }
+  .article-img{
+    width: 100%;
+  }
 }
